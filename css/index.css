@@ -1,0 +1,140 @@
+/*Variables*/
+:root{
+    --color-header: #f7b538;
+    --color-enlace: rgba(247,183,64,.5);
+    --color-panel: rgba(0,0,0,.5);
+}
+
+/*Estilos globales*/
+html{
+    box-sizing:border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos generales*/
+body{
+    font-size: 1.6rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Utilidades*/
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.txt-center{
+    text-align: center;
+}
+
+/*Estilos header*/
+.header{
+    padding: 1rem;
+    background-color: var(--color-header);
+    position: sticky;
+    top: 0;
+}
+.header__title{
+    text-align: center;
+}
+
+/*Estilos panel*/
+.panel{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--color-panel);
+    transition: all 0.5s ease-in-out;
+}
+.panel--hide{
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-100vw);
+}
+.panel__menu{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.panel__item{
+    width: 100%;
+    flex-basis: calc(100% / 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-header);
+    transition: all .2s ease-in-out;
+}
+.panel__item:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--color-enlace);
+}
+
+/*Estilos boton*/
+.button{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2vh;
+    right: 3vw;
+    z-index: 2;
+    background-color: var(--color-header);
+}
+
+/*Estilos main*/
+.main__section{
+    min-height: 100vh;
+    padding: 1rem;
+    padding-top: 5rem;
+}
+.main__title{
+    padding: 1rem;
+    text-align: center;
+}
+
+/*Estilos reloj*/
+.watch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.watch__panel{
+    padding: 3rem 0;
+    width: 80rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.watch__button{
+    width: 15rem;
+    height: 4rem;
+    border: none;
+    border: 1px solid black;
+    border-radius: .5rem;
+    background-color: var(--color-header);
+    transition: all .2s ease-in-out;
+}
+.watch__button:hover{
+    cursor: pointer;
+    background-color: var(--color-enlace);
+}

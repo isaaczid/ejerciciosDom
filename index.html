@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Ejercicios del DOM</h1>
+    </header>
+    <aside class="panel panel--hide">
+        <nav class="panel ">
+            <ul class="panel__menu">
+                <a class="panel__item"href="#seccion1"><li>Reloj digital</li></a>
+                <a class="panel__item"href="#seccion2"><li>Seccion2</li></a>
+                <a class="panel__item"href="#seccion3"><li>Seccion3</li></a>
+                <a class="panel__item"href="#seccion4"><li>Seccion4</li></a>
+                <a class="panel__item"href="#seccion5"><li>Seccion5</li></a>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main container">
+        <section id="seccion1" class="main__section">
+            <h2 class="main__title">Seccion1</h2>
+            <div class="watch">
+                <h3 class="watch__title">Reloj Digital y Alarma Sonora</h3>
+                <div class="watch__panel">
+                    <button class="watch__button watch__button--begin">Iniciar reloj</button>
+                    <button class="watch__button watch__button--stop" disabled>Detener reloj</button>
+                    <button class="watch__button">Iniciar alarma</button>
+                    <button class="watch__button">Detener alarma</button>
+                </div>
+            </div>
+        </section>
+        <section id="seccion2" class="main__section">
+            <h2 class="main__title">Seccion2</h2>
+        </section>
+        <section id="seccion3" class="main__section">
+            <h2 class="main__title">Seccion3</h2>
+        </section>
+        <section id="seccion4" class="main__section">
+            <h2 class="main__title">Seccion4</h2>
+        </section>
+        <section id="seccion5" class="main__section">
+            <h2 class="main__title">Seccion5</h2>
+        </section>
+    </main>
+    <button class="hamburger hamburger--collapse button button--burguer" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
