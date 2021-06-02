@@ -1,6 +1,7 @@
+const d = document;
+
 export function reloj(selecBegin, selecStop, selectTitle){
-    const d = document,
-        $botonInicio = d.querySelector(selecBegin),
+    const $botonInicio = d.querySelector(selecBegin),
         $botonParo = d.querySelector(selecStop),
         $titulo = d.querySelector(selectTitle);
     let refTiempo = null;
@@ -23,9 +24,8 @@ export function reloj(selecBegin, selecStop, selectTitle){
     });
 }
 
-const alarma = (selecBegin, selecStop) => {
-    const d = document,
-        $botonInicio = d.querySelector(selecBegin),
+export function alarma(selecBegin, selecStop){
+    const $botonInicio = d.querySelector(selecBegin),
         $botonParo = d.querySelector(selecStop);
 }
 
