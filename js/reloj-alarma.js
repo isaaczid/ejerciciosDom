@@ -23,3 +23,9 @@ export function reloj(selecBegin, selecStop, selectTitle){
     });
 }
 
+const alarma = (selecBegin, selecStop) => {
+    const d = document,
+        $botonInicio = d.querySelector(selecBegin),
+        $botonParo = d.querySelector(selecStop);
+}
+
